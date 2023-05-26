@@ -4,6 +4,11 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    'node_modules/daisyui/dist/**/*.js',
+    'node_modules/react-daisyui/dist/**/*.js',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -14,5 +19,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"),
+    require("flowbite/plugin")
+  ],
 }
