@@ -5,6 +5,7 @@ import { register } from "../api/users"
 import { useMutation } from "react-query"
 import {useRouter} from "next/navigation"
 import { ThreeDots } from "react-loader-spinner"
+import Link from "next/link"
 
 
 export default function Register() {
@@ -122,88 +123,11 @@ export default function Register() {
               />
             </div>
             <Button className="w-full rounded bg-transparent text-red-600 font-semibold border-2 border-red-600 rounded-lg hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 ">Register</Button>
-            <div className="text-sm font-medium text-gray-500">Have An Account? <a href="./login" className="text-red-600 hover:underline dark:text-red-600"> Login Now</a>
+            <div className="text-sm font-medium text-gray-500">Have An Account? <Link href="./login" className="text-red-600 hover:underline dark:text-red-600"> Login Now</Link>
             </div>
           </form>
         </div>
         </div>
       </div>
-
-
-
-
-
-      // <div className="container px-8">
-      //     <div className="bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-            
-      //         <div className="relative overflow-hidden md:flex w-1/2 justify-around items-center hidden">
-      //             <p>
-      //               <span className="text-red-600 font-bold">RAKUZEN</span> beautifully evokes the meaning of <span className="italic font-semibold">‘joy of dining’</span> or simply <span className="italic font-semibold">‘happy dining’</span> in Japanese.
-      //               <br />
-      //               Come on a delightful dining journey with us, savour our specially curated selection of popular Japanese cuisine peppered with a dash of eclectic South East Asian street food.
-      //               <br/>
-      //               Using the best available ingredients, our passionate chefs tap on decades of rich culinary experience in the Far East to create an authentic and superior meal experience for you.
-      //               <br/>
-      //               Whether you yearn for the familiar tastes of Japan or seek fresh exciting flavours for your palate, Rakuzen is the place to be.
-      //               Happy Dining at Rakuzen Ramen And Sushi.
-      //               <br/>
-      //               <span className="font-semibold italic">Itadakimasu!</span>
-      //             </p>
-      //         </div>
-
-
-
-      //         <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
-      //             <form>
-      //             <div className="">
-      //                 <Input
-      //                   className=""
-      //                   type="text"
-      //                   placeholder="Full Name"
-      //                   name="name"
-      //                   onChange={onChangeHandler}
-      //                 />
-      //               </div>
-      //               <div className="">
-      //                 <Input
-      //                   className=""
-      //                   type="text"
-      //                   placeholder="Username"
-      //                   name="username"
-      //                   onChange={onChangeHandler}
-      //                 />
-      //               </div>
-      //               <div className="">
-      //                 <Input
-      //                   className=""
-      //                   type="email"
-      //                   placeholder="Email"
-      //                   name="email"
-      //                   onChange={onChangeHandler}
-      //                 />
-      //               </div>
-      //               <div className="">
-      //                 <Input
-      //                   className="w-full"
-      //                   type="password"
-      //                   placeholder="Password"
-      //                   name="password"
-      //                   onChange={onChangeHandler}
-      //                 />
-      //               </div>
-      //               <div className="">
-      //                 <Input
-      //                   className="w-full"
-      //                   type="password"
-      //                   placeholder="Confirm Password"
-      //                   name="password2"
-      //                   onChange={onChangeHandler}
-      //                 />
-      //               </div>
-      //               <Button className="block w-full">Register</Button>
-      //             </form>
-      //         </div>
-      //     </div>
-      // </div>
     )
 }

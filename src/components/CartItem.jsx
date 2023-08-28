@@ -23,7 +23,7 @@ export default function CartItem({ item }){
 
 
     return (
-        <div className="">
+        <div>
             <div className="mx-auto justify-center md:flex md:space-x-6 xl:px-0">
                 <div className="rounded-lg md:w-2/3">
                     <div className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
@@ -38,7 +38,7 @@ export default function CartItem({ item }){
                                 <p><span className="font-semibold text-red-600">Total: RM {item.subtotal}</span></p>
                             </div>
                             <div className="flex items-start">
-                                <button className="hover:text-red-600 hover:underline text-xs font-semibold" onClick={() => onDeleteOneHandler(item.food._id)}>Remove</button>
+                                <button className="hover:text-red-600 hover:underline text-xs text-red-400 font-semibold" onClick={() => onDeleteOneHandler(item.food._id)}>Remove</button>
                             </div>
                         </div>
                 </div>

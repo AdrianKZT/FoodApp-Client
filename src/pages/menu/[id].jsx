@@ -6,6 +6,8 @@ import { addItemToCart } from "../api/cart";
 import localforage from "localforage";
 import jwt_decode from "jwt-decode"
 import Swal from "sweetalert2";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function FoodItem({ food }) {
   const [quantity, setQuantity] = useState(0);

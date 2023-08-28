@@ -6,6 +6,7 @@ import { login } from "../api/users"
 import { useRouter } from "next/navigation"
 import logo from "../../logo/Logo.png"
 import Image from "next/image"
+import Link from "next/link"
 import { ThreeDots } from "react-loader-spinner"
 import Swal from "sweetalert2"
 
@@ -85,8 +86,7 @@ export default function Login() {
             <Button className="w-full rounded bg-transparent text-red-600 font-semibold border-2 border-red-600 rounded-lg hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0 ">LOGIN</Button>
 
             <div className="text-sm font-medium text-gray-500">
-                Not registered? 
-                <a href="./register" className="text-red-600 hover:underline dark:text-red-600"> Create account</a>
+                Not registered? <Link href="./register" className="text-red-600 hover:underline dark:text-red-600"> Create account</Link>
             </div>
           </form>
         </div>
